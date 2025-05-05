@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #348dd1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(car.jpg);
+    background-size: cover;
+}
+.main-div{
+    height: 500px;
+    width: 500px;
+    margin-top: 100px;
+    transform-style: preserve-3d;
+    /* transform: rotate3d(1,1,1, 30deg); */
+    animation: rotate 18s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg)rotateX(20deg);
+    }
+  100%{
+    transform: rotatey(-360deg)rotateX(20deg);
+  }
+  }
+.div{
+    height: 500px;
+    width: 500px;
+    /* background-color: rgb(240, 240, 248); */
+    position: absolute;
+    border-radius: 20px;
+}
+.front{
+    /* background-color: chartreuse; */
+    transform: translateZ(280px);
+    box-shadow: 0 0 15px rgb(16, 255, 251);
+}
+.right{
+    /* background-color: rgb(57, 15, 242); */
+    transform: rotateY(90deg) translateZ(300px);
+    box-shadow: 0 0 15px rgb(255, 255, 5);
+}
+.left{
+    /* background-color: rgb(213, 149, 20); */
+    transform: rotateY(-90deg) translateZ(300px);
+    box-shadow: 0 0 15px rgb(255, 76, 231);
+}
+.button{
+    /* background-color: rgb(20, 255, 239); */
+    transform: translateZ(-280px);
+    box-shadow: 0 0 15px rgb(5, 255, 109);
+}
+img{
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+}

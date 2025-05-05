@@ -1,0 +1,33 @@
+img{
+    margin-top: -400px;
+    height: 350px;
+    width: 700px;
+    position: absolute;
+    animation: boun 19s linear infinite;
+    
+}
+/* #img2{
+    margin-top: 30%;
+    margin-left: 40%;
+} */
+@keyframes  boun{
+    0%{
+        transform: translateY(-400px);
+    }
+    25%{
+        transform: translateY(650px);
+        transform: rotateZ(-30deg);
+    }
+    50%{
+        transform: translateY(650px);
+    }
+    75%{
+        transform: translateY(650px);
+    }
+    100%{
+        transform: translateY(-400px);
+        transform: rotateZ(30deg);
+        /* opacity: 0; */
+    }
+    
+}

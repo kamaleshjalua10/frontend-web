@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(227, 241, 238);
+    overflow: hidden;
+}
+.contanar{
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+.sun{
+    position:fixed;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+.earth,.moon{
+    position: absolute;
+    position: relative;
+    border-style: solid;
+    border-color: white transparent;
+    border-width:0.1em 0.1em 0 0 ;
+    border-radius: 50%;
+}
+.earth{
+    height: 30em;
+    width: 30em;
+    top: 5em;
+    left: 5em;
+    animation: orbin 6.55s linear infinite;
+    /* background-color: aqua; */
+}
+.moon{
+    height: 8em;
+    width: 8em;
+    top: 0;
+    right: 0;
+    animation: orbin 6.55s linear infinite;
+}
+.earth::before,.moon::before{
+    content:"";
+    position: absolute;
+    border-radius: 50%;
+}
+.earth::before{
+    width: 3em;
+    height: 3em;
+    top: 2.8em;
+    right: 2.8em;
+    background-color: aqua;
+}
+.moon::before{
+    height: 1.2em;
+    width: 1.2em;
+    top: 0.8em;
+    right: 0.2em;
+    background-color: silver;
+}
+@keyframes orbin{
+    to{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(96, 105, 173);
+    display: flex;
+    justify-content: center;
+}
+.main-div{
+    height: 250px;
+    width: 200px;
+    margin-top: 20%;
+    transform-style: preserve-3d;
+    /* transform: rotateX(30deg); */
+    animation: rotate 20s linear infinite;
+}
+.mainu{
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    border-radius: 15px;
+}
+.font{
+    background-image: url(messi3.jpg);
+    background-size: cover;
+    transform: translateZ(270px);
+    transition: all 1s  ease-in-out;
+    box-shadow: 0 0 8px red;
+}
+/* .font:hover{
+    filter: blur(2px);
+    box-shadow: 0 0 5px red;
+} */
+.fright{
+   
+    background-image: url(nymar2.jpg);
+    background-size: cover;
+    transform: rotateY(45deg) translateZ(300px);
+    box-shadow: 0 0 8px rgb(48, 133, 244);
+}
+.fleft{
+    
+    background-image: url(ronaldo.jpg);
+    background-size: cover;
+    transform: rotateY(-45deg) translateZ(320px);
+    box-shadow: 0 0 8px rgb(196, 241, 46);
+}
+.right{
+    
+    background-image: url(enzo.jpg);
+    background-size: cover;
+    transform: rotateY(91deg) translateZ(270px);
+    box-shadow: 0 0 8px rgb(201, 158, 78);
+}
+.left{
+    
+    background-image: url(Bellingham.jpg);
+    background-size: cover;
+    transform: rotateY(-91deg) translateZ(270px);
+    box-shadow: 0 0 8px rgb(226, 74, 125);
+}
+.button{
+    
+    background-image: url(Di\ Maria.jpg);
+    background-size: cover;
+    transform: translateZ(-270px);
+    box-shadow: 0 0 8px rgb(27, 244, 103);
+}
+.buttonl{
+    
+    background-image: url(dybala.jpg);
+    background-size: cover;
+    transform: rotateY(-45deg) translateZ(-320px);
+    box-shadow: 0 0 8px rgb(19, 240, 236);
+}
+.buttonr{
+    
+    background-image: url(Kylian\ Mbappe.jpg);
+    background-size: cover;
+    transform: rotateY(45deg) translateZ(-320px);
+    box-shadow: 0 0 8px rgb(138, 50, 170);
+}
+.or{
+    background-image: url(Messi1.jpg);
+    background-size: cover;
+    transform: translatey(-260px);
+    box-shadow: 0 0 8px rgb(119, 6, 111);
+}
+.or2{
+    background-image: url(Messi2.jpg);
+    background-size: cover;
+    transform: translatey(260px);
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+@keyframes rotate{
+    0%{
+        transform: rotateY(0deg)rotate(15deg);;
+        /* transform: rotateX(20deg); */
+    }
+    100%{
+        transform: rotateY(360deg)rotate(15deg);
+        
+    }
+}

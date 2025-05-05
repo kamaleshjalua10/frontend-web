@@ -1,0 +1,20 @@
+body{
+    font-size: 30px;
+    color: rgb(6, 247, 255);
+    background-color: black;
+}
+#main{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+}
+#div2{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+.or{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(28, 188, 10);
+}

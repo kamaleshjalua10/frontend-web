@@ -1,0 +1,406 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Amazon Frontend Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white p-4 flex justify-between items-center">
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-bars text-2xl">
+    </i>
+    <img alt="Amazon Logo" class="h-10" height="40" src="https://storage.googleapis.com/a1aa/image/L59XaC1P_gQ4HdRmQSrvKguZjc09jQNRot3xQfKAK7M.jpg" width="100"/>
+   </div>
+   <div class="flex items-center space-x-4">
+    <div class="relative">
+     <select class="bg-gray-700 text-white p-2 rounded-l">
+      <option>
+       All
+      </option>
+      <option>
+       Mobile Phones
+      </option>
+      <option>
+       Kitchen Items
+      </option>
+      <option>
+       Smartwatches
+      </option>
+      <option>
+       Shoes and Daily Wears
+      </option>
+     </select>
+     <input class="p-2 w-96" type="text"/>
+     <button class="bg-yellow-500 p-2 rounded-r">
+      <i class="fas fa-search">
+      </i>
+     </button>
+    </div>
+    <div class="flex items-center space-x-2">
+     <i class="fas fa-user text-2xl">
+     </i>
+     <span>
+      Account &amp; Lists
+     </span>
+    </div>
+    <div class="flex items-center space-x-2">
+     <i class="fas fa-shopping-cart text-2xl">
+     </i>
+     <span>
+      Cart
+     </span>
+    </div>
+   </div>
+  </header>
+  <!-- Navigation -->
+  <nav class="bg-gray-700 text-white p-2 flex justify-between">
+   <div class="flex space-x-4">
+    <a class="hover:underline" href="#">
+     Today's Deals
+    </a>
+    <a class="hover:underline" href="#">
+     Coupons
+    </a>
+    <a class="hover:underline" href="#">
+     Renewed Deals
+    </a>
+    <a class="hover:underline" href="#">
+     Electronics
+    </a>
+    <a class="hover:underline" href="#">
+     Grocery Deals
+    </a>
+   </div>
+  </nav>
+  <!-- Main Banner -->
+  <div class="bg-blue-600 text-white text-center p-4">
+   <h1 class="text-2xl">
+    Memorial Day Sale: up to 40% off
+   </h1>
+  </div>
+  <!-- Categories -->
+  <div class="bg-white p-4 flex justify-around">
+   <div class="text-center">
+    <img alt="Mobile Phones" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/YeMvfxryaOOakgEqEXgmuUf5Dsr6MvELX38hVYvA8Fw.jpg" width="100"/>
+    <p>
+     Mobile Phones
+    </p>
+    <a class="text-blue-500 hover:underline" href="#">
+     See more
+    </a>
+   </div>
+   <div class="text-center">
+    <img alt="Kitchen Items" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/KsJgyQm6rLY-TwJqqjuYyKKFeGbVQrDEAvFi7Cu_CkU.jpg" width="100"/>
+    <p>
+     Kitchen Items
+    </p>
+    <a class="text-blue-500 hover:underline" href="#">
+     See more
+    </a>
+   </div>
+   <div class="text-center">
+    <img alt="Smartwatches" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/6ppzfJaOsSBvVSuo1AiLSb4tMaPJq_FHAZzrVX8nBV0.jpg" width="100"/>
+    <p>
+     Smartwatches
+    </p>
+    <a class="text-blue-500 hover:underline" href="#">
+     See more
+    </a>
+   </div>
+   <div class="text-center">
+    <img alt="Shoes and Daily Wears" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/OIKBr6WM2l3G3TzXW5Gj3OFJt9CpDdZQr5KYPEuNkMA.jpg" width="100"/>
+    <p>
+     Shoes and Daily Wears
+    </p>
+    <a class="text-blue-500 hover:underline" href="#">
+     See more
+    </a>
+   </div>
+  </div>
+  <!-- Featured Deals -->
+  <div class="bg-white p-4">
+   <h2 class="text-xl font-bold mb-4">
+    Featured Deals
+   </h2>
+   <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+    <div class="text-center">
+     <img alt="Product 1" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/W3xlq-i-FDjVTSA5JqcQuJ1p9jcojGXyT722Qx0j92Q.jpg" width="150"/>
+     <p>
+      HELLO Pink Water Bottle and...
+     </p>
+     <span class="text-red-500">
+      Limited time deal
+     </span>
+    </div>
+    <div class="text-center">
+     <img alt="Product 2" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/fZeupULtHm6F24b1NArffM25-MDghSywLtT2fpiAJoI.jpg" width="150"/>
+     <p>
+      Luggage Bags Traveler's Choice
+     </p>
+     <span class="text-red-500">
+      Limited time deal
+     </span>
+    </div>
+    <div class="text-center">
+     <img alt="Product 3" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/XTG0Z0kVkh4lSJanRZY2Cb1aPFUkbZ3ycYlg-mdbMGQ.jpg" width="150"/>
+     <p>
+      Coleman Outdoor Equipment
+     </p>
+     <span class="text-red-500">
+      Limited time deal
+     </span>
+    </div>
+    <div class="text-center">
+     <img alt="Product 4" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/aYzbRxcggGJnaNrPllL7Fq4q26Uxs-humZhQsib_zi4.jpg" width="150"/>
+     <p>
+      HEATER Block WiFi Smart Heate...
+     </p>
+     <span class="text-red-500">
+      Limited time deal
+     </span>
+    </div>
+    <div class="text-center">
+     <img alt="Product 5" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/QYdxMt5DfSJZYjpfdT607WTZdpYGHAJMqeXJwtwxuuo.jpg" width="150"/>
+     <p>
+      Osprey Backpacks, Hydration Res...
+     </p>
+     <span class="text-red-500">
+      Limited time deal
+     </span>
+    </div>
+    <div class="text-center">
+     <img alt="Product 6" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/dcb5kQJSDELiMKN7qkIOqRiGa8oxE6r3WbIFbWAiz8M.jpg" width="150"/>
+     <p>
+      HELLO Pink Water Bottle and...
+     </p>
+     <span class="text-red-500">
+      Limited time deal
+     </span>
+    </div>
+    <div class="text-center">
+     <img alt="Product 7" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/6-dAOYngWBIarzyPY5OW41ytF5-aBswXfHY0nIduY7I.jpg" width="150"/>
+     <p>
+      Luggage Bags Traveler's Choice
+     </p>
+     <span class="text-red-500">
+      Limited time deal
+     </span>
+    </div>
+    <div class="text-center">
+     <img alt="Product 8" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/dXixUS9JUKZWRdGdtaFD6ZgigbkdOJc0sqmnQO6sSwc.jpg" width="150"/>
+     <p>
+      Coleman Outdoor Equipment
+     </p>
+     <span class="text-red-500">
+      Limited time deal
+     </span>
+    </div>
+    <div class="text-center">
+     <img alt="Product 9" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/PE1lGLEWnxjS5Weq6-oad7-N1LPIGDOfXCty3DGsV3Y.jpg" width="150"/>
+     <p>
+      HEATER Block WiFi Smart Heate...
+     </p>
+     <span class="text-red-500">
+      Limited time deal
+     </span>
+    </div>
+    <div class="text-center">
+     <img alt="Product 10" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/Or6HJZjUp9SSpAShiQUGcveGTKt6qGvV_Q-6cKcL6zk.jpg" width="150"/>
+     <p>
+      Osprey Backpacks, Hydration Res...
+     </p>
+     <span class="text-red-500">
+      Limited time deal
+     </span>
+    </div>
+    <div class="text-center">
+     <img alt="Product 11" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/tcwpU2LM9bh2FS_z7uZ1bF2XXWdXrBKzLdX9kSlOIME.jpg" width="150"/>
+     <p>
+      HELLO Pink Water Bottle and...
+     </p>
+     <span class="text-red-500">
+      Limited time deal
+     </span>
+    </div>
+    <div class="text-center">
+     <img alt="Product 12" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/RjQhtDGpmq8WnuSPpAm59IkvP2hGurz5hOwTHUn7whI.jpg" width="150"/>
+     <p>
+      Luggage Bags Traveler's Choice
+     </p>
+     <span class="text-red-500">
+      Limited time deal
+     </span>
+    </div>
+   </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4">
+   <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div>
+     <h3 class="font-bold">
+      Get to Know Us
+     </h3>
+     <ul>
+      <li>
+       <a class="hover:underline" href="#">
+        Careers
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Blog
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        About Amazon
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Investor Relations
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Amazon Devices
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Amazon Science
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="font-bold">
+      Make Money with Us
+     </h3>
+     <ul>
+      <li>
+       <a class="hover:underline" href="#">
+        Sell products on Amazon
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Sell on Amazon Business
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Sell apps on Amazon
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Become an Affiliate
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Advertise Your Products
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Self-Publish with Us
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Host an Amazon Hub
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        See More Make Money with Us
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="font-bold">
+      Amazon Payment Products
+     </h3>
+     <ul>
+      <li>
+       <a class="hover:underline" href="#">
+        Amazon Business Card
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Shop with Points
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Reload Your Balance
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Amazon Currency Converter
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="font-bold">
+      Let Us Help You
+     </h3>
+     <ul>
+      <li>
+       <a class="hover:underline" href="#">
+        Amazon and COVID-19
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Your Account
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Your Orders
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Shipping Rates &amp; Policies
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Returns &amp; Replacements
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Manage Your Content and Devices
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Amazon Assistant
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Help
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

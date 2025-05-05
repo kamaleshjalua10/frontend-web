@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(116, 150, 251, 0.625);
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.main-div{
+    height: 650px;
+    width: 450px;
+    background-color: rgba(130, 159, 244, 0.625);
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h1{
+    display: grid;
+    margin-left: 70px;
+}
+span{
+    color: white;
+    margin-left: 80px;
+}
+input{
+    height: 40px;
+    width: 370px;
+    border-radius: 20px;
+    outline: none;
+    border-color: white;
+    box-shadow: 0px 0px 10px rgb(47, 73, 98);
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 35px;
+    text-align: center;
+}
+input:focus{
+    animation: big 0.6s;
+}
+@keyframes big{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+
+        transform: scale(1.2);
+        box-shadow: 0 0 10px red;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.smal{
+    height: 45px;
+    width: 350px;
+    background-color: rgb(116, 244, 220);
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px black;
+    position:relative;
+    left: 40px;
+}
+.div1{
+    top: 50px;
+}
+.div2{
+    top: 40px;
+}
+.div3{
+    top: 30px;
+}
+.div4{
+    top: 20px;
+}
+.div5{
+    top: 10px;
+}
+p{
+    font-size: 30px;
+    font-family: monospace;
+    color: red;
+    text-align: center;
+}

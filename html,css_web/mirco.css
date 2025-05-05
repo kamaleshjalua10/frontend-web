@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(255, 0, 0);
+}
+.maindiv{
+    /* height: 600px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  */
+    /* background-color: black;  */
+    /* border-radius: 10px; */
+    display: grid; 
+    grid-template-columns: repeat(3,100px);
+    gap: 10px;
+    /* align-content: center; */
+
+}
+.square{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    
+}
